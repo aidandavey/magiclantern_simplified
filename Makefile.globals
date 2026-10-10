@@ -14,7 +14,8 @@ ifndef TOP_DIR
 endif
 
 # conditionally set ARM binpath, to allow overriding in env / CLI
-ARM_BINPATH ?= /usr/bin
+ARM_BINPATH = C:/ARM_LIBS/bin
+$(info Using ARM toolchain at $(ARM_BINPATH))
 
 ARM_ABI = none-eabi
 CROSS_COMPILE = $(ARM_BINPATH)/arm-$(ARM_ABI)-
